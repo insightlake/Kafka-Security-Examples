@@ -1,0 +1,23 @@
+c3 {
+  org.eclipse.jetty.jaas.spi.LdapLoginModule required
+  useLdaps="true"
+  contextFactory="com.sun.jndi.ldap.LdapCtxFactory"
+  debug="true"
+  hostname="domain"
+  port="3269"
+  providerUrl="ldaps://domain:3269"
+  bindDn="DN-NAME"
+  bindPassword="pass"
+  authenticationMethod="simple"
+  forceBindingLogin="true"
+  userBaseDn="DC=verticalserve,DC=com"
+  userRdnAttribute="sAMAccountName"
+  userIdAttribute="sAMAccountName"
+  userPasswordAttribute="userPassword"
+  userObjectClass="user"
+  roleBaseDn="ou=Groups,DC=verticalserve,DC=com"
+  roleNameAttribute="cn"
+  roleMemberAttribute="member"
+  roleObjectClass="group";
+};
+
