@@ -19,7 +19,7 @@ We need to create two groups Group-Admins and Group-Restricted
 export CONTROL_CENTER_OPTS="-Djava.security.auth.login.config=/etc/confluent-control-center/c3.jaas -Dcom.sun.jndi.ldap.object.disableEndpointIdentification=true -Djavax.net.ssl.trustStore=/secrets/kafka.ldap.trustore.jks -Djavax.net.ssl.trustStorePassword=Confulent -Djavax.net.debug=SSL”
 
 
-
+----
 Control Center Properties file
 
 ####Added for LDAP Authentication ######
@@ -37,3 +37,5 @@ confluent.controlcenter.rest.authentication.method=BASIC
 confluent.controlcenter.rest.authentication.roles=Group-Admins,Group-Restricted
 
 confluent.controlcenter.auth.restricted.roles=Group-Restricted
+
+----
